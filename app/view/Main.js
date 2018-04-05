@@ -8,7 +8,8 @@ Ext.define('Beerhere.view.Main', {
         'Beerhere.view.ToolbarButton',
         'Beerhere.view.BeerCntr',
         'Shared.HtmlContainer',
-        'Beerhere.view.MainModel'
+        'Beerhere.view.MainModel',
+        'Ext.plugin.Responsive'
     ],
 
     controller: 'main',
@@ -29,7 +30,6 @@ Ext.define('Beerhere.view.Main', {
             },
 
             url: '/assets/html/siteinfo.html',
-            //html: `<div class="site-info"></div>`,
 
             height: 200,
             items: [
@@ -79,7 +79,13 @@ Ext.define('Beerhere.view.Main', {
         },
         {
             xtype: 'container',
-            layout: 'card',
+            layout: {
+                type: 'card',
+                animation: {
+                    type: 'slide',
+                    direction: 'left'
+                }
+            },
             reference: 'pagewrapper',
             cls: 'pagewrapper',
             flex: 1,
@@ -93,7 +99,7 @@ Ext.define('Beerhere.view.Main', {
                     scrollable: true,
 
                     items: [
-                        {                            
+                        {
                             xtype: 'htmlcntr',
                             reference: 'html',
 

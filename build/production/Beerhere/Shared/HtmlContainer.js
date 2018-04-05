@@ -9,9 +9,7 @@ Ext.define('Shared.HtmlContainer', {
     },
 
     updateUrl: function (url) {
-        
         if (url) {
-            this.setHidden(true);
             this.setMasked({
                 xtype: 'loadmask', message: 'Loading...'
             });
@@ -21,7 +19,6 @@ Ext.define('Shared.HtmlContainer', {
                 success: function (response) {
                     this.setHtml(response.responseText);
                     this.setMasked(false);
-                    this.setHidden(false);
                 }
             });
         }
