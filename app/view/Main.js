@@ -6,7 +6,8 @@ Ext.define('Beerhere.view.Main', {
         'Ext.MessageBox',
         'Beerhere.view.MainController',
         'Beerhere.view.ToolbarButton',
-        'Beerhere.view.BeerCntr',
+        'Beerhere.view.Beers',
+        'Beerhere.view.PageContainer',
         'Shared.HtmlContainer',
         'Beerhere.view.MainModel',
         'Ext.plugin.Responsive'
@@ -45,26 +46,26 @@ Ext.define('Beerhere.view.Main', {
                     items: [
                         {
                             cls: 'navi-button logo',
-                            itemId: 'logo'
+                            href: '#'
                         },
                         {
 
                             cls: 'navi-button contact',
                             html: 'Contact',
-                            itemId: 'contact'
+                            href: 'page/contact'
 
                         },
 
                         {
                             cls: 'navi-button beers',
                             html: 'Beers',
-                            itemId: 'beers'
+                            href: 'beer'
                         },
 
                         {
                             cls: 'navi-button events',
                             html: 'Events',
-                            itemId: 'events'
+                            href: 'page/events'
                         },
 
                     ]
@@ -79,37 +80,35 @@ Ext.define('Beerhere.view.Main', {
         },
         {
             xtype: 'container',
-            layout: {
-                type: 'card',
-                animation: {
-                    type: 'slide',
-                    direction: 'left'
-                }
-            },
+            // layout: {
+            //     type: 'card',
+            //     animation: {
+            //         type: 'slide',
+            //         direction: 'left'
+            //     }
+            // },
+            layout: 'card',
             reference: 'pagewrapper',
             cls: 'pagewrapper',
             flex: 1,
+            //scrollable: true,
 
             items: [
                 {
-                    xtype: 'container',
-                    shadow: true,
-                    cls: 'page',
-                    reference: 'page',
-                    scrollable: true,
-
-                    items: [
-                        {
-                            xtype: 'htmlcntr',
-                            reference: 'html',
-
-                        }
-                    ]
-
+                    xtype: 'pagecontainer',
+                    page: 'home'
                 },
                 {
-                    xtype: 'beercntr',
-                    reference: 'beers'
+                    xtype: 'pagecontainer',
+                    page: 'contact'
+                },
+                {
+                    xtype: 'pagecontainer',
+                    page: 'events'
+                },
+                {
+                    xtype: 'beers',
+                    reference: 'beerPage'
                 }
             ]
 

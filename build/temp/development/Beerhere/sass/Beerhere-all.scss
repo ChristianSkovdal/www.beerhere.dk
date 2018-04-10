@@ -1,9 +1,12 @@
 $app-name:  dynamic( 'Beerhere' );
 $image-search-path: 'C:/dev/test/web/Beerhere/build/development/Beerhere/modern/resources';
 $theme-name:  dynamic( 'theme-material' );
+$include-beerhere-view-beerscontroller: dynamic(true);;
 $include-beerhere-view-main: dynamic(true);;
 $include-beerhere-view-maincontroller: dynamic(true);;
 $include-beerhere-view-mainmodel: dynamic(true);;
+$include-beerhere-view-toolbarbutton: dynamic(true);;
+$include-beerhere-view-beers: dynamic(true);;
 $include-ext-abstractcomponent: dynamic(true);;
 $include-ext-abstractmanager: dynamic(true);;
 $include-ext-abstractplugin: dynamic(true);;
@@ -633,6 +636,9 @@ $include-ext-viewport-ios: dynamic(true);;
 $include-ext-viewport-viewport: dynamic(true);;
 $include-ext-viewport-wp: dynamic(true);;
 $include-ext-viewport-windowsphone: dynamic(true);;
+$include-shared-htmlcontainer: dynamic(true);;
+$include-shared-utility: dynamic(true);;
+$include-util: dynamic(true);;
 $output-paths: ("path": "../../modern/resources", "shared": "../../resources");
 
 /* ======================== ETC ======================== */

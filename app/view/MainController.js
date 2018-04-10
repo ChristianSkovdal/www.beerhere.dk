@@ -4,37 +4,48 @@ Ext.define('Beerhere.view.MainController', {
     alias: 'controller.main',
 
     listen: {
+        controller : {
+            '#' : {
+                unmatchedroute : 'goHome'
+            }
+        },
         component: {
-            'main': {
-                initialize: 'logoClick'
-            },
-            '#logo': {
-                click: 'logoClick'
-            },
-            '#contact': {
-                click: 'htmlClick'
-            },
-            '#events': {
-                click: 'htmlClick'
-            },
-            '#beers': {
-                click: 'beersClick'
+            'toolbarbutton' : {
+                click: 'onButtonClick'
             }
         },
     },
 
-    logoClick() {
-        this.lookup('pagewrapper').setActiveItem(this.lookup('page'));
-        this.lookup('html').setUrl('assets/html/home.html');
+    routes : {
+        'beer' : 'gotoBeers',
+        'page/:id' : 'gotoPage',
     },
 
-    beersClick() {
-        this.lookup('pagewrapper').setActiveItem(this.lookup('beers'));
+    onButtonClick(btn) {
+        this.redirectTo(btn.href, true);
     },
 
-    htmlClick(btn) {
-        this.lookup('pagewrapper').setActiveItem(this.lookup('page'));
-        this.lookup('html').setUrl('assets/html/' + btn.getItemId() + '.html');
+    goHome() {
+        this.redirectTo('page/home', true);
+    },
+
+    gotoBeers(beer) {
+        this.lookup('pagewrapper').setActiveItem(this.lookup('beerPage'));
+    },
+
+    gotoPage(id) {
+
+        let page = this.getView().down('pagecontainer[page='+id+']');
+        if (page) {
+            this.lookup('pagewrapper').setActiveItem(page);
+        }
+        else {
+            Ext.Msg.alert('Error', 'Cannot find page ' + id);
+            goHome();
+        }
+        
+        //this.lookup('pagewrapper').setActiveItem(this.lookup('page'));
+        //this.lookup('html').setUrl('assets/html/' + id + '.html');
     },
 
 

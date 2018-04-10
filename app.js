@@ -11,5 +11,8 @@ Ext.application({
         'Beerhere.view.Main'
     ],
 
+    defaultToken : '/page/#',
+
+
     mainView: 'Beerhere.view.Main'
 });
