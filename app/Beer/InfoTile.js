@@ -18,7 +18,6 @@ Ext.define('Beer.InfoTile', {
 
     referenceHolder: true,
 
-
     items: [
         {
             xtype: 'container',

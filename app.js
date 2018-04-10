@@ -1,4 +1,5 @@
 Ext.Loader.setPath('Beer', '/app/Beer');
+Ext.Loader.setPath('Decals', '/app/Decals');
 
 Ext.application({
     name: 'Beerhere',

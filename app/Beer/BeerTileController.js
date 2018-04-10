@@ -3,6 +3,25 @@ Ext.define('Beer.BeerTileController', {
 
     alias: 'controller.beertile',
 
+    
+    // listen: {
+    //     component: {
+    //         'beerbutton' : {
+    //             click: 'onBeerButtonClick'
+    //         }
+    //     },
+    // },
+
+    onBeerButtonClick(btn) {
+        var win = window.open(btn.getHref(), '_blank');
+        win.focus();
+    },
+
+    gotoDecalPrinting() {
+        this.redirectTo('tapsigns', true);
+
+    },
+
     onInfoClicked: function (btn) {
         this.getView().setActiveItem(1);
     },

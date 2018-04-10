@@ -12,8 +12,12 @@ Ext.define('Beerhere.view.BeersController', {
     },
 
     init() {
+        if (this.loaded) {
+            return;
+        }
+        this.loaded=true;
         Util.get('/assets/beers.json')
-            .then(({response, obj}) => {
+            .then(({ response, obj }) => {
 
                 obj.forEach(b => {
                     this.addBeer(b);

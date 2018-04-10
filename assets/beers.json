@@ -7,8 +7,8 @@
       "30 L Keykeg",
       "24x330ml"
     ],
-    "img": "desert.jpg",
-    "banner": "lighthouse.jpg",
+    "img": "/img/beers/executioner.jpg",
+    "banner": "/img/beers/executioner.jpg",
     "available": false,
     "label": true,
     "tapsign": true,
@@ -22,6 +22,25 @@
     "utScore": 3.68,
     "utLink": "https://untappd.com/b/beer-here-executioner-ipa/95315",
     "style": "ipa",
+    "inStock": true
+  },
+  {
+    "name": "Ammestout",
+    "tagline": "Milkstout with Coffee",
+    "description": "Imperial porter aged for 3 months on caramelised lava stones and US hops. Layers of complexity leading to a dry finish. Drink now or mature for years",
+    "packaging": [
+      "24x330ml",
+      "30 L Keykeg"
+    ],
+    "img": "/img/beers/ammestout.jpg",
+    "available": true,
+    "ibu": 80,
+    "abv": 10.4,
+    "og": 22.5,
+    "label": true,
+    "utScore": 3.6,
+    "utLink": "https://untappd.com/b/beer-here-executioner-ipa/95315",
+    "style": "porter",
     "inStock": true
   },
   {

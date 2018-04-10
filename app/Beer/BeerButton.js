@@ -5,9 +5,12 @@ Ext.define('Beer.BeerButton', {
     layout: 'fit',
 
     cls: 'beerbutton',
+    controller: 'beertile',
 
     config: {
         href: null
-    }
+    },
+
+    handler: 'onBeerButtonClick'
     
 });

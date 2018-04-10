@@ -1,6 +1,6 @@
-Ext.define('Beer.BioTile', {
+Ext.define('Beer.PresentationTile', {
     extend: 'Ext.Container',
-    xtype: 'biotile',
+    xtype: 'presentation-tile',
 
     requires: [
         'Ext.Img'
@@ -29,11 +29,10 @@ Ext.define('Beer.BioTile', {
                 {
                     xtype: 'image',
                     reference: 'banner',
-                    //userCls: 'bio-banner',
                     width: '100%',
                     height: '100%',
                     flex: 1,
-                    html: '&#160;'
+                    html: '&#160;',
                 },
                 {
                     layout: 'vbox',
@@ -62,7 +61,7 @@ Ext.define('Beer.BioTile', {
     ],
 
     updateBeerStyle: function (value) {
-        this.lookup('banner').setUserCls('bio-coverimage info-banner-' + value);
+        this.lookup('banner').setUserCls('bio-coverimage presentation-banner-' + value);
     },
 
     updateBanner: function (value) {

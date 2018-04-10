@@ -7,7 +7,7 @@ Ext.define('Beer.BeerTile', {
         'Beer.BeerTileController',
         'Beer.InfoTile',
         'Beer.NerdInfo',
-        'Beer.BioTile',
+        'Beer.PresentationTile',
         'Beer.BeerBar'
     ],
 
@@ -37,7 +37,7 @@ Ext.define('Beer.BeerTile', {
 
     items: [
         {
-            xtype: 'biotile',
+            xtype: 'presentation-tile',
         },
         {
             xtype: 'infotile'
@@ -53,26 +53,26 @@ Ext.define('Beer.BeerTile', {
     },
 
     updateBanner: function (value) {
-        this.down('biotile').updateBanner(value);
+        this.down('presentation-tile').updateBanner(value);
     },
 
     updateDescription: function (value) {
-        this.down('biotile').updateDescription(value);
+        this.down('presentation-tile').updateDescription(value);
         this.down('infotile').updateHeader(value);
     },
 
     updateImage: function (value) {
-        this.down('biotile').updateImage(value);
+        this.down('presentation-tile').updateImage(value);
         this.down('infotile').updateImage(value);
     },
 
     updateFooter: function (footer) {
-        this.down('biotile').updateFooter(footer);
+        this.down('presentation-tile').updateFooter(footer);
     },
 
     updateBeerStyle: function (style) {
         this.down('infotile').updateBeerStyle(style);
-        this.down('biotile').updateBeerStyle(style);
+        this.down('presentation-tile').updateBeerStyle(style);
     },
 
 });

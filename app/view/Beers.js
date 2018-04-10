@@ -7,6 +7,8 @@ Ext.define('Beerhere.view.Beers', {
     scrollable: true,
     cls: 'dashboard',
 
+    style: 'background: transparent;',
+
     requires: [
         'Beer.BeerTile',
         'Beerhere.view.BeersController'

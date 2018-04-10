@@ -28,6 +28,7 @@ Ext.define('Beerhere.view.MainController', {
 
     routes : {
         'beer' : 'gotoBeers',
+        'tapsigns' : 'gotoTapsigns',
         'page/:id' : 'gotoPage',
     },
 
@@ -43,6 +44,12 @@ Ext.define('Beerhere.view.MainController', {
         this.lookup('pagewrapper').setActiveItem(this.lookup('beerPage'));
     },
 
+    gotoTapsigns() {
+        debugger;
+        this.lookup('pagewrapper').setActiveItem(this.lookup('tapsigns'));
+    },
+    
+    
     gotoPage(id) {
 
         let page = this.getView().down('pagecontainer[page='+id+']');

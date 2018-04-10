@@ -119,8 +119,12 @@ pre {
 }
 
 .logo {
-    background-image: url(/img/ultra.png);
-    margin-top: -30px;
+    background-image: url(/img/logo.png);
+    margin-top: -60px;
+    transform: rotate(-10deg);
+    width: 129px;
+    height:140px;
+
 }
 
 .contact {
@@ -135,9 +139,11 @@ pre {
     margin-top: -5px;
 }
 
-.logo:hover {
-    background-color: steelblue;
-}
+/* .logo:hover {
+    -webkit-box-shadow: 10px 10px 25px -8px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 25px -8px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 25px -8px rgba(0,0,0,0.75);
+}  */
 
 .contact:hover {
     margin-top: -38px;
