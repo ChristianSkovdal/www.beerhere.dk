@@ -2,7 +2,20 @@ Ext.define('Beerhere.view.Beers', {
     extend: 'Ext.Container',
     xtype: 'beers',
 
-    //cls: 'beers',
+    controller: 'beers',
 
-    html: '<p>- Det vil være et stort problem for de danske bilister, hvis man om allerede tre år lukker ned for FM-båndet, siger Torben Lund Kusk, afdelingschef i FDM.</p>'
+    scrollable: true,
+    cls: 'dashboard',
+
+    requires: [
+        'Beer.BeerTile',
+        'Beerhere.view.BeersController'
+    ],
+
+    defaults: {
+        xtype: 'beertile',
+        height: 355,
+        userCls: 'big-50 small-100 dashboard-item',
+        minWidth: 355,
+    },
 });

@@ -2,6 +2,16 @@ Ext.define('Beerhere.view.MainController', {
     extend: 'Ext.app.ViewController',
 
     alias: 'controller.main',
+    alternateClassName: ['MainController'],
+
+    static: {
+
+        errHandler(err) {
+            debugger;
+            Ext.Msg.alert('Error', err.error || err.message)
+        },
+    
+    },
 
     listen: {
         controller : {

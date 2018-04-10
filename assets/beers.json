@@ -1,0 +1,127 @@
+[
+  {
+    "name": "Executioner IPA",
+    "tagline": "US Westcoast IPA",
+    "description": "Crisp and citrussy  west coast IPA. Light bodied with a bitter finish.",
+    "packaging": [
+      "30 L Keykeg",
+      "24x330ml"
+    ],
+    "img": "desert.jpg",
+    "banner": "lighthouse.jpg",
+    "available": false,
+    "label": true,
+    "tapsign": true,
+    "ibu": 70,
+    "abv": 7.0,
+    "og": 16,
+    "rbScore": 93,
+    "rbLink": "https://www.ratebeer.com/beer/beer-here-executioner-ipa/153213/",
+    "baScore": 3.72,
+    "baLink": "https://www.beeradvocate.com/beer/profile/19476/85609/",
+    "utScore": 3.68,
+    "utLink": "https://untappd.com/b/beer-here-executioner-ipa/95315",
+    "style": "ipa",
+    "inStock": true
+  },
+  {
+    "name": "Alsatian Blonde",
+    "tagline": "French Style Blonde Ale",
+    "description": "An easy drinking simple blonde ale brewed with a herbal aroma and limited bitterness.",
+    "packaging": [
+      "30L Dolium Keg"
+    ],
+    "img": "lighthouse.jpg",
+    "banner": "desert.jpg",
+    "available": true,
+    "tapsign": true,
+    "ibu": 22,
+    "abv": 4.6,
+    "og": 11.5,
+    "baScore": 3.2,
+    "baLink": "https://www.beeradvocate.com/beer/profile/19476/85609/",
+    "utScore": 3.12,
+    "utLink": "https://untappd.com/b/beer-here-executioner-ipa/95315",
+    "style": "blonde",
+    "inStock": true
+  },
+  {
+    "name": "Hippyjuice",
+    "tagline": "Organic pale ale",
+    "description": " Juicy, light and slightly sweet pale ale with tangerine and grapefruit from lots of Mosaic hops",
+    "packaging": [
+      "30 L Keykeg",
+      "24x330ml"
+    ],
+    "img": "jellyfish.jpg",
+    "available": true,
+    "ibu": 35,
+    "abv": 5.2,
+    "og": 12.5,
+    "label": true,
+    "tapsign": true,
+    "rbScore": 88,
+    "rbLink": "https://www.ratebeer.com/beer/beer-here-executioner-ipa/153213/",
+    "utScore": 3.11,
+    "utLink": "https://untappd.com/b/beer-here-executioner-ipa/95315",
+    "style": "apa"
+  },
+  {
+    "name": "Kama Citra",
+    "tagline": "Hoppy Brown Ale",
+    "description": "Dry hopped brown ale with notes of citrus, bread and nuts. Dry finish",
+    "packaging": [
+      "30 L Keykeg",
+      "24x330ml"
+    ],
+    "img": "desert.jpg",
+    "available": true,
+    "ibu": 55,
+    "abv": 6.0,
+    "og": 16,
+    "label": true,
+    "tapsign": true,
+    "rbScore": 89,
+    "rbLink": "https://www.ratebeer.com/beer/beer-here-executioner-ipa/153213/",
+    "baScore": 3.45,
+    "baLink": "https://www.beeradvocate.com/beer/profile/19476/85609/",
+    "utScore": 3.7,
+    "utLink": "https://untappd.com/b/beer-here-executioner-ipa/95315",
+    "style": "brownale",
+    "inStock": true
+  },
+  {
+    "name": "Yeastiality",
+    "tagline": "Wild Saison",
+    "description": " Bone-dry saison style ale brewed with american hops, and fermented with three different yeast and bacteria cultures.",
+    "packaging": [
+      "375 ml bottle",
+      "750 ml bottle"
+    ],
+    "img": "desert.jpg",
+    "available": true,
+    "label": true,
+    "ibu": 35,
+    "abv": 7.0,
+    "og": 14,
+    "style": "saison"
+  },
+  {
+    "name": "Rynkedyr",
+    "tagline": "Imperial Stone Porter",
+    "description": "Imperial porter aged for 3 months on caramelised lava stones and US hops. Layers of complexity leading to a dry finish. Drink now or mature for years",
+    "packaging": [
+      "24x330ml"
+    ],
+    "img": "desert.jpg",
+    "available": true,
+    "ibu": 80,
+    "abv": 10.4,
+    "og": 22.5,
+    "label": true,
+    "utScore": 3.6,
+    "utLink": "https://untappd.com/b/beer-here-executioner-ipa/95315",
+    "style": "porter",
+    "inStock": true
+  }
+]

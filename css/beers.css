@@ -1,0 +1,197 @@
+/* $color-blue: #167abc;
+$color-soft-cyan: #03b4d5;
+$color-soft-blue: #2eadf5;
+$color-soft-green: #9cc96b;
+$color-soft-orange: #ffc107;
+$color-soft-red: #e44959;
+$color-soft-purple: #925e8b;
+$color-gray: #949495;
+$color-green: #16b603; */
+
+
+.small-100 {
+    width: calc(100% - 20px);
+}
+
+@media (min-width: 1000px) {
+    .big-50 {
+        width: calc(50% - 20px);
+    } 
+}
+
+.bio-tile {
+    background-color:whitesmoke;
+}
+
+.bio-coverimage {
+    background-size: 100% auto !important;
+    
+}
+
+.bio-banner, .bio-image {
+    background-position: top left !important;
+    background-size: 100% auto !important;
+}
+
+.bio-image {
+
+    width: 70px;
+    height: 70px;
+    border: 2px solid whitesmoke;
+    border-radius: 50%;
+    margin-left: -35px;
+    margin-top: -35px;
+} 
+
+.bio-description {
+    padding-top: 43px;
+    text-align: center;
+}
+
+.bio-description > .x-innerhtml::first-line {
+    font-weight: 600;
+    font-size: 130%;
+}
+
+.dashboard > * > .x-inner,
+.dashboard > * > * > .x-inner {
+    padding: 20px 0 0 20px;
+}
+
+.dashboard-item {
+    margin: 0 20px 20px 0;
+    float: left;
+}
+
+
+/*==========================*/
+
+
+.beerbutton {
+    background-size: contain;
+    text-align: center;
+    font-size: .6em !important;
+    color: whitesmoke !important;    
+    font-weight: normal !important;
+    background-size: contain;
+    background-color: #607d8b !important;
+    /* border-radius: 10px !important; */
+
+}
+
+.ratebeer {
+    background-image: url('/img/rb.png') !important;
+}
+.beeradvocate {
+    background-image: url('/img/ba.png') !important;
+}
+.untappd {
+    background-image: url('/img/ut.png') !important;
+    color: black !important;    
+    font-weight: bold !important;
+}
+
+.decals {
+    background-color: #16b603 !important;
+    font-weight: bold !important;
+}
+
+.facts {
+    background-color: #e44959 !important;
+    font-weight: bold !important;
+}
+
+/*==========================*/
+
+
+.info {
+    background-color: #167abc !important;    
+}
+.label {
+    background-color: #ffc107 !important;    
+}
+
+.infotile {
+    background-color: whitesmoke !important;
+}
+
+.info-banner {
+    background: linear-gradient(to bottom, #468fd3 60%, whitesmoke 40%);
+}
+
+.info-banner-ipa {
+    background: linear-gradient(to bottom, #16640d 60%, whitesmoke 40%);
+}
+.info-banner-blonde {
+    background: linear-gradient(to bottom, #ffea8a 60%, whitesmoke 40%);
+
+}
+.info-banner-saison {
+    background: linear-gradient(to bottom, #ffc107 60%, whitesmoke 40%);
+
+}
+.info-banner-blonde .info-title {
+    color: rgb(124, 39, 0) !important;
+}
+.info-banner-saison .info-title {
+    color: rgb(124, 39, 0) !important;
+}
+.info-banner-porter {
+    background: linear-gradient(to bottom, #110701 60%, whitesmoke 40%);
+}
+.info-banner-brownale {
+    background: linear-gradient(to bottom, #5c2a01 60%, whitesmoke 40%);
+}
+.info-banner-apa {
+    background: linear-gradient(to bottom, #2f8607 60%, whitesmoke 40%);
+}
+.info-banner-redale {
+    background: linear-gradient(to bottom, #ac2a02 60%, whitesmoke 40%);
+    color: black;
+}
+
+.info-title {
+    color: white;
+    font-weight: bolder;
+    font-size: 2em;
+    margin-left: 150px;
+    margin-top: 25px;
+    text-align: left;
+    
+    width: calc(100% - 210px);
+}
+
+.info-text {
+
+    margin: 20px;
+    line-height: 1.8em;
+    font-size: larger;
+}
+
+
+.info-image {
+
+    width: 110px;
+    height: 110px;
+    border: 2px solid whitesmoke;
+    border-radius: 50%;
+    margin-left: -35px;
+    margin-top: -40px;
+} 
+
+/*==========================*/
+
+.social-status-header, .social-status-count {
+    text-align: center;
+}
+
+.social-status-category {
+    font-size: .7em;
+    font-weight: normal;
+    
+}
+
+.social-status-category:not(:last-child) {
+    border-right: 1px solid #ddd;
+}
+
