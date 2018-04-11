@@ -37,20 +37,20 @@ Ext.define('Beer.BeerBar', {
         {
             xtype: 'beerbutton',
             userCls: 'ratebeer',
-            html: '100%',
-            reference: 'rb'
+            reference: 'rb',
+            hidden:true
         },
         {
             xtype: 'beerbutton',
             userCls: 'beeradvocate',
-            html: '3,78/5',
-            reference: 'ba'
+            reference: 'ba',
+            hidden:true
         },
         {
             xtype: 'beerbutton',
             userCls: 'untappd',
-            html: '3,7/5',
-            reference: 'ut'
+            reference: 'ut',
+            hidden:true
         },
         {
             xtype: 'beerbutton',
@@ -97,25 +97,22 @@ Ext.define('Beer.BeerBar', {
     },
 
     updateRb(value) {
-        this.updateSomething('rb', value);
+        this.updateRatingButton('rb', value);
     },
 
     updateBa(value) {
-        this.updateSomething('ba', value);
+        this.updateRatingButton('ba', value);
     },
 
     updateUt(value) {
-        this.updateSomething('ut', value);
+        this.updateRatingButton('ut', value);
     },
 
-    updateSomething(site, value) {
+    updateRatingButton(site, value) {
         if (value.score && value.url) {
-            this.lookup(site).setHtml(value.score);
-            this.lookup(site).setHref(value.url);   
+            this.lookup(site).setHtml(value.score)
+                .setHref(value.url)   
+                .show();
         }
-        else {
-            this.lookup(site).hide();
-        }
-
     }
 });

@@ -1,0 +1,36 @@
+.tapsigns-toolbar {
+    background-color: #F1F1F1 !important;
+
+}
+
+.tapsign-width-label .x-label-text-el {
+    margin-right: 10px;
+
+}
+
+.tapsign-slider {
+    margin-right: 50px;
+
+}
+
+.thumbicon {
+    width: 120px !important;
+    height: 120px !important;
+    background-size: contain;
+    /*-webkit-filter: drop-shadow(2px 2px 2px #222 );
+     filter: drop-shadow(2px 2px 2px #222); */
+}
+
+.thumbicon:active {
+    -ms-transform: translate(2px, 2px); /* IE 9 */
+    -webkit-transform: translate(2px, 2px); /* Safari */
+    transform: translate(2px, 2px);
+}
+
+.doc-img {
+    cursor: pointer;
+}
+
+.doc {
+    background-color: whitesmoke;
+}

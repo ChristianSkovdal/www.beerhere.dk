@@ -11,8 +11,10 @@ Ext.define('Beerhere.view.Main', {
         'Shared.HtmlContainer',
         'Beerhere.view.MainModel',
         'Ext.plugin.Responsive',
-        'Decals.Main'
+        'Beer.model.Beer',
+        'Tapsigns.TapsignsMain'
     ],
+
 
     controller: 'main',
     viewModel: 'main',
@@ -97,6 +99,7 @@ Ext.define('Beerhere.view.Main', {
             items: [
                 {
                     xtype: 'pagecontainer',
+                    userCls: 'page-home',
                     page: 'home'
                 },
                 {
@@ -112,8 +115,8 @@ Ext.define('Beerhere.view.Main', {
                     reference: 'beerPage'
                 },
                 {
-                    xtype: 'decals',
-                    reference: 'tapsigns'
+                    xtype: 'tapsigns',
+                    reference: 'tapsigns',
                 }
             ]
 

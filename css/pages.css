@@ -1,0 +1,13 @@
+﻿.page-home {
+    height: 100%;
+}
+
+.header {
+    background-image: url(/img/densidstenadver.jpg);
+    /* background-size: cover; */
+    background-position: top;
+    background-repeat: no-repeat;
+    /* background-position-y: -100px; */
+    height: 50%;
+    
+}

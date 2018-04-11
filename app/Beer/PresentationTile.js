@@ -84,7 +84,6 @@ Ext.define('Beer.PresentationTile', {
             items = container.getItems(),
             was = (items.length > 1) ? items.getAt(1) : null,
             now;
-
         now = Ext.factory(footer, null, was);
 
         if (now !== was) {

@@ -2,8 +2,6 @@ Ext.define('Beerhere.view.Beers', {
     extend: 'Ext.Container',
     xtype: 'beers',
 
-    controller: 'beers',
-
     scrollable: true,
     cls: 'dashboard',
 
@@ -11,7 +9,6 @@ Ext.define('Beerhere.view.Beers', {
 
     requires: [
         'Beer.BeerTile',
-        'Beerhere.view.BeersController'
     ],
 
     defaults: {

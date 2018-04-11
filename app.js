@@ -1,5 +1,5 @@
 Ext.Loader.setPath('Beer', '/app/Beer');
-Ext.Loader.setPath('Decals', '/app/Decals');
+Ext.Loader.setPath('Tapsigns', '/app/Tapsigns');
 
 Ext.application({
     name: 'Beerhere',
