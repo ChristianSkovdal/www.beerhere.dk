@@ -23,7 +23,8 @@ Ext.define('Beer.BeerTile', {
         description: null,
         text: null,
         nerdInfo: null,
-        beerStyle: null
+        beerStyle: null,
+        beerData: null,
     },
 
     layout: {

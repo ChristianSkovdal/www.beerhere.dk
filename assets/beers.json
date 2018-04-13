@@ -6,9 +6,9 @@
     "tagline": "US Westcoast IPA",
     "description": "Crisp and citrussy west coast IPA. Light bodied with a bitter finish.",
     "img": "/img/beers/executioner.jpg",
-    "banner": "/img/beers/executioner.jpg",
+    "banner": "/img/banners/hops2.jpg",   
     "tapsign": "/img/beers/executioner.jpg",
-    "label": "/files/labels/executioner.pdf",
+    "label": "/downloads/labels/executioner.pdf",
     "available": false,
     "ibu": 70,
     "abv": 7.0,
@@ -28,19 +28,95 @@
       }
     }
   },
- {
+  {
     "id": "ammestout",
     "name": "Ammestout",
     "style": "porter",
     "tagline": "Milkstout with Coffee",
     "tapsign": "/img/beers/ammestout.jpg",
-    "description": "Imperial porter aged for 3 months on caramelised lava stones and US hops. Layers of complexity leading to a dry finish. Drink now or mature for years",
+    "description": " Velvety stout brewed with lactose and coffee. Limited bitterness and chewy malts makes this a good beginners stout.",
     "img": "/img/beers/ammestout.jpg",
+    "banner": "/img/banners/coffeebeans.jpg",   
     "available": true,
+    "label": "/downloads/labels/ammestout.pdf",
     "ibu": 80,
     "abv": 10.4,
     "og": 22.5,
-    "label": true,
+    
+    "ratings": {
+      "rb": {
+        "score": 98,
+        "url": "https://www.ratebeer.com/beer/beer-here-executioner-ipa/153213/"
+      },
+      "ut": {
+        "score": 3.55,
+        "url": "https://untappd.com/b/beer-here-executioner-ipa/95315"
+      }
+    }
+  },
+  {
+    "id": "hopfix",
+    "name": "Hopfix",
+    "banner": "/img/banners/hopfixbanner.jpg",   
+    "style": "ipa",
+    "tagline": "Rye IPA",
+    "tapsign": "/img/beers/hopfix.jpg",
+    "description": "Copper coloured Scandinavian style old-school IPA, brewed with rye and dank hops.",
+    "img": "/img/beers/hopfix.jpg",
+    "available": true,
+    "ibu": 60,
+    "abv": 6.5,
+    "og": 15.5,
+    
+    "ratings": {
+      "rb": {
+        "score": 98,
+        "url": "https://www.ratebeer.com/beer/beer-here-executioner-ipa/153213/"
+      },
+      "ut": {
+        "score": 3.55,
+        "url": "https://untappd.com/b/beer-here-executioner-ipa/95315"
+      }
+    }
+  },
+  {
+    "id": "kamacitra",
+    "name": "Kama Citra",
+    "style": "brownale",
+    "tagline": "Hoppy Brown Ale",
+    "tapsign": "/img/beers/kamacitra.jpg",
+    "description": "Dry hopped brown ale with notes of citrus, bread and nuts. Dry finish.",
+    "img": "/img/beers/kamacitra.jpg",
+    "available": true,
+    "ibu": 60,
+    "abv": 6.5,
+    "og": 15.5,
+    
+    "ratings": {
+      "rb": {
+        "score": 98,
+        "url": "https://www.ratebeer.com/beer/beer-here-executioner-ipa/153213/"
+      },
+      "ut": {
+        "score": 3.55,
+        "url": "https://untappd.com/b/beer-here-executioner-ipa/95315"
+      }
+    }
+  },
+  {
+    "id": "hippyjuice",
+    "name": "Hippy Juice",
+    "style": "apa",
+    "tagline": "Organic Pale Ale",
+    "tapsign": "/img/beers/hippyjuice.jpg",
+    "description": " Juicy, light and slightly sweet pale ale with tangerine and grapefruit from lots of Mosaic hops.",
+    "img": "/img/beers/hippyjuice.jpg",
+    "banner": "/img/banners/glass.jpg",   
+    "available": true,
+    "ibu": 60,
+    "abv": 6.5,
+    "og": 15.5,
+    
     "ratings": {
       "rb": {
         "score": 98,
@@ -75,26 +151,6 @@
     }
   },
   {
-    "name": "Hippyjuice",
-    "tagline": "Organic pale ale",
-    "description": " Juicy, light and slightly sweet pale ale with tangerine and grapefruit from lots of Mosaic hops",
-    "packaging": [
-      "30 L Keykeg",
-      "24x330ml"
-    ],
-    "img": "jellyfish.jpg",
-    "available": true,
-    "ibu": 35,
-    "abv": 5.2,
-    "og": 12.5,
-    "label": true,
-    "rbScore": 88,
-    "rburl": "https://www.ratebeer.com/beer/beer-here-executioner-ipa/153213/",
-    "utScore": 3.11,
-    "uturl": "https://untappd.com/b/beer-here-executioner-ipa/95315",
-    "style": "apa"
-  },
-  {
     "name": "Kama Citra",
     "tagline": "Hoppy Brown Ale",
     "description": "Dry hopped brown ale with notes of citrus, bread and nuts. Dry finish",
@@ -107,7 +163,7 @@
     "ibu": 55,
     "abv": 6.0,
     "og": 16,
-    "label": true,
+    
     "rbScore": 89,
     "rburl": "https://www.ratebeer.com/beer/beer-here-executioner-ipa/153213/",
     "baScore": 3.45,
@@ -127,7 +183,7 @@
     ],
     "img": "desert.jpg",
     "available": true,
-    "label": true,
+    
     "ibu": 35,
     "abv": 7.0,
     "og": 14,
@@ -145,7 +201,7 @@
     "ibu": 80,
     "abv": 10.4,
     "og": 22.5,
-    "label": true,
+    
     "utScore": 3.6,
     "uturl": "https://untappd.com/b/beer-here-executioner-ipa/95315",
     "style": "porter",

@@ -47,7 +47,8 @@ Ext.define('Beerhere.view.MainController', {
 
             let footer = Ext.apply({
                 xtype: 'beerbar',
-                beer: b.id
+                beer: b.id,
+                label: b.label
             }, b.ratings);
 
             beerPage.add({
@@ -62,9 +63,12 @@ Ext.define('Beerhere.view.MainController', {
                 banner: b.banner,
                 label: b.label,
                 text: b.description,
-                beerStyle: b.style
+                beerStyle: b.style,
+                beerData: b
             });
         });
+
+        //beerpage.getController().load(records);
 
         // Add tap signs
         tapsigns.getController().load(records);

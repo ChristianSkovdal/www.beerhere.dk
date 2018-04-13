@@ -5,7 +5,7 @@ Ext.define('Beer.BeerBar', {
 
     config: {        
         beer: null,
-        label: false,
+        label: null,
         rb: null,    
         ba: null,    
         ut: null,
@@ -22,7 +22,7 @@ Ext.define('Beer.BeerBar', {
     defaults: {
         border: false,
         tapsign: false,
-        label: false,
+        //label: false,
         margin: '2 3',
         width: 50,
         height: 50
@@ -83,7 +83,7 @@ Ext.define('Beer.BeerBar', {
 
     
     updateLabel(value) {
-        this.lookup('label').setHidden(value);
+        this.lookup('label').setHidden(!value);
     },
 
     updateTapsign(value) {

@@ -17,11 +17,20 @@ Ext.define('Tapsigns.TapsignsMain', {
 
     layout: 'fit',
 
-    // applyTapSign(id) {
-    //     if (id) {
-    //         //let store = Ext.data.StoreManager.lookup('beers');
-    //     }
-    // },
+    applyTapSign(id) {
+        // if (id) {
+        //     debugger;
+        //     let store = Ext.data.StoreManager.lookup('beers');
+        //     if (store) {
+        //         let rec = store.getById(id);
+        //         if (rec) {
+        //             this.getController().resetDecals();
+        //             this.getController().add(rec.get('label'));        
+        //         }
+        //     }
+            
+        // }
+    },
 
     items: [
         {
@@ -36,6 +45,10 @@ Ext.define('Tapsigns.TapsignsMain', {
                     {
                         text: 'Print',
                         handler: 'printDecals'
+                    },
+                    {
+                        text: 'Reset',
+                        handler: 'resetDecals'
                     },
                     {
                         label: 'Size',
