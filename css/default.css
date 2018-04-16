@@ -124,6 +124,14 @@ pre {
     transform: rotate(-10deg);
     width: 129px;
     height:140px;
+}
+
+.facebook {
+    width: 64px;
+    height:64px;
+    margin-top: -10px;
+    margin-right: 10px;
+    transform: rotate(-10deg);
 
 }
 
@@ -249,4 +257,13 @@ pre {
         margin-top: -15px;
     }
 
+    .site-info {
+        font-size: .60em;
+        letter-spacing: .10em;
+    }
+    
+    .facebook {
+        width: 40px;
+        height:40px;
+    }    
 }

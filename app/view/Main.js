@@ -44,6 +44,7 @@ Ext.define('Beerhere.view.Main', {
 
                     defaults: {
                         xtype: 'toolbarbutton',
+                        flex:1
                     },
 
                     items: [
@@ -70,6 +71,12 @@ Ext.define('Beerhere.view.Main', {
                             html: 'Events',
                             href: 'page/events'
                         },
+                        '->',
+                        {
+                            xtype: 'component',
+                            //cls: 'navi-button facebook',
+                            html: '<a  href="https://www.facebook.com/beerhere4you"><img class="facebook" src="/img/facebook.png" /></a>'
+                        }
 
                     ]
 
