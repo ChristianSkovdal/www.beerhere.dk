@@ -111,7 +111,8 @@ Ext.define('Beerhere.view.Main', {
                 },
                 {
                     xtype: 'pagecontainer',
-                    page: 'contact'
+                    page: 'contact',
+                    userCls: 'contact-page-background'
                 },
                 {
                     xtype: 'pagecontainer',

@@ -9,11 +9,11 @@
 
 h1 {
 	font-family: Raleway;
-	font-size: 24px;
+	font-size: 24px !important;
 	font-style: normal;
 	font-variant: normal;
-	font-weight: 500;
-	line-height: 26.4px;
+	font-weight: bold !important;
+    line-height: 26.4px;
 }
 h3 {
 	font-family: Raleway;
