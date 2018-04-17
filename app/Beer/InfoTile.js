@@ -9,11 +9,12 @@ Ext.define('Beer.InfoTile', {
     layout: 'fit',
 
     config: {
-        text: null,
+        //text: null,
         abv: null,
         og: null,
         ibu: null,
-        style: null
+        style: null,
+        info: null
     },
 
     referenceHolder: true,
@@ -36,18 +37,18 @@ Ext.define('Beer.InfoTile', {
                     layout: 'hbox',
                     items: [
                         {
-                            xtype: 'component',    
+                            xtype: 'component',
                             reference: 'title',
-                            height:'100%',
+                            height: '100%',
                             userCls: 'info-title',
                         },
                         {
                             xtype: 'button',
                             html: '<i style="font-size:18px" class="fa fa-arrow-circle-left"></i>',
                             handler: 'flip',
-                            style:'color:white;background: red !important;',
-                            height:50,
-                            width: 80                        
+                            //style:'color:white;background: red !important;',
+                            height: 50,
+                            width: 80
                             //width: '90%',
                         }
 
@@ -61,10 +62,51 @@ Ext.define('Beer.InfoTile', {
                     scrollable: true,
 
                     items: [
+                        // {
+                        //     xtype: 'component',
+                        //     userCls: 'info-text',
+                        //     //flex: 1,
+                        //     reference: 'text'
+                        // },
                         {
-                            xtype: 'component',
-                            userCls: 'info-text',
-                            flex: 1,
+                            xtype: 'container',
+                            //userCls: 'info-ingredients',
+
+                            tpl: `
+                                    <div class="info-wrapper">
+                                        <div class="info-text">
+                                            {description}
+                                        </div>
+
+                                        <!-- <div class="info-heading">Brewed from</div>-->
+                                        <div class="info-ingredients">
+
+                                            <tpl if="malts != null">
+                                                <span class="info-heading">Malts:&nbsp;</span>
+                                                <span class="info-ingr info-malts">
+                                                    <span class="ingrtext">{malts}</span>
+                                                </span>
+                                            </tpl>
+
+                                            <tpl if="hops != null">
+                                                <span class="info-heading">// Hops:&nbsp;</span>
+                                                <span class="info-ingr info-hops">
+                                                    <span class="ingrtext">{hops}</span>
+                                                </span>
+                                            </tpl>
+
+                                            <tpl if="other != null">
+                                                <span class="info-heading">// Other:&nbsp;</span>
+                                                <span class="info-ingr info-other">
+                                                    <span class="ingrtext">{other}</span>
+                                                </span>
+                                            </tpl>
+
+                                        </div>
+                                    </div>
+                                    `,
+
+                            //flex: 1,
                             reference: 'text'
                         }
                     ]
@@ -83,7 +125,7 @@ Ext.define('Beer.InfoTile', {
         }
     ],
 
-      
+
     updateBeerStyle: function (value) {
         this.lookup('banner').setUserCls('info-banner-' + value);
     },
@@ -94,15 +136,26 @@ Ext.define('Beer.InfoTile', {
         this.down('nerdinfo').setAbv(value.abv);
     },
 
-    updateHeader(value) {
-        this.lookup('title').setHtml(value.split('<br>')[0]);
+    // updateHeader(value) {
+    //     this.lookup('title').setHtml(value);
+    // },
+
+    // updateText: function (value) {
+    //     var txt = this.lookup('text');
+    //     txt.setHtml(value);
+    // },
+
+    updateInfo: function (value) {
+
+        this.lookup('title').setHtml(value.name);
+        if (value.ingredients) {
+            value.malts = value.ingredients.malts;
+            value.hops = value.ingredients.hops;
+            value.other = value.ingredients.other;
+        }
+        this.lookup('text').setData(value);
     },
 
-    updateText: function (value) {
-        var txt = this.lookup('text');
-        txt.setHtml(value);
-    },
-    
     updateImage: function (value) {
         this.configureImage('image', value);
     },

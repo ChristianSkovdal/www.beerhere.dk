@@ -20,11 +20,13 @@ Ext.define('Beer.BeerTile', {
         banner: null,
         footer: null,
         image: null,
-        description: null,
-        text: null,
+        info: null,
+        //description: null,
+        //text: null,
         nerdInfo: null,
         beerStyle: null,
         beerData: null,
+        //ingredients: null,
     },
 
     layout: {
@@ -43,23 +45,28 @@ Ext.define('Beer.BeerTile', {
         {
             xtype: 'infotile'
         },
+
     ],
 
     updateNerdInfo: function (value) {
         this.down('infotile').updateNerdInfo(value);
     },
 
-    updateText: function (value) {
-        this.down('infotile').updateText(value);
-    },
+    // updateText: function (value) {
+    //     this.down('infotile').updateText(value);
+    // },
+
+    // updateIngredients: function (value) {
+    //     this.down('infotile').updateIngredients(value);
+    // },
 
     updateBanner: function (value) {
         this.down('presentation-tile').updateBanner(value);
     },
 
-    updateDescription: function (value) {
-        this.down('presentation-tile').updateDescription(value);
-        this.down('infotile').updateHeader(value);
+    updateInfo: function (value) {
+        this.down('presentation-tile').updateInfo(value);
+        this.down('infotile').updateInfo(value);
     },
 
     updateImage: function (value) {

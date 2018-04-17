@@ -36,8 +36,22 @@ Ext.define('Beer.BeerTileController', {
             pdf.addImage(imgdata[beer.img], 'JPEG', 15, 50, 80, 80);
             pdf.setFontSize(15);
 
-            let lines = pdf.splitTextToSize(beer.description || '', 100);
-            pdf.text(100, 50, lines);
+
+            //let text = `${beer.description}\n\n\nMalts: ${beer.ingredients.malts}`;
+
+            let lines = pdf
+                .setFontSize(16)
+                .splitTextToSize(beer.description || '', 100);
+                debugger;
+
+            let offset = 50;
+            pdf.text(100, offset, lines);
+            offset += lines.length * 16;
+            lines = pdf
+                    .setFontSize(12)
+                    .splitTextToSize(`Malts: ${beer.ingredients.malts}\nHops: ${beer.ingredients.hops}\nOther ingredients: ${beer.ingredients.other}`, 100);
+
+            pdf.text(100, offset, lines);
 
             // Beerhere general info
             //lines = pdf.splitTextToSize(beer.description || '', 100);

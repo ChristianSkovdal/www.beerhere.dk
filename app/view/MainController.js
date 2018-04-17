@@ -57,13 +57,20 @@ Ext.define('Beerhere.view.MainController', {
                     og: b.og,
                     abv: b.abv,
                 },
+                info: {
+                    name: b.name,
+                    tagline: b.tagline,
+                    description: b.description,
+                    ingredients: b.ingredients
+                },
                 footer: footer,
-                description: `${b.name}<br>${b.tagline}`,
+                //description: `${b.name}<br>${b.tagline}`,
                 image: b.img,
                 banner: b.banner,
                 label: b.label,
-                text: b.description,
+                //text: b.description,
                 beerStyle: b.style,
+                //ingredients: b.ingredients,
                 beerData: b
             });
         });
@@ -74,42 +81,6 @@ Ext.define('Beerhere.view.MainController', {
         tapsigns.getController().load(records);
 
     },
-
-//     initBeers(cmp) {
-//         let store = this.getViewModel().getStore('beers');
-// debugger;
-//         store.load({
-//             scope: this,
-//             callback: function (records, operation, success) {
-// debugger;
-//                 records.forEach(beer => {
-
-//                     let b = beer.getData();
-
-//                     let footer = Ext.apply({
-//                         xtype: 'beerbar',
-//                         beer: b.id
-//                     }, b.ratings);
-
-//                     cmp.add({
-//                         nerdInfo: {
-//                             ibu: b.ibu,
-//                             og: b.og,
-//                             abv: b.abv,
-//                         },
-//                         footer: footer,
-//                         description: `${b.name}<br>${b.tagline}`,
-//                         image: b.img,
-//                         banner: b.banner,
-//                         label: b.label,
-//                         text: b.description,
-//                         beerStyle: b.style
-//                     });
-
-//                 });
-//             }
-//         });
-//     },
 
     onButtonClick(btn) {
         this.redirectTo(btn.href, true);
@@ -139,10 +110,5 @@ Ext.define('Beerhere.view.MainController', {
             Ext.Msg.alert('Error', 'Cannot find page ' + id);
             goHome();
         }
-
-        //this.lookup('pagewrapper').setActiveItem(this.lookup('page'));
-        //this.lookup('html').setUrl('assets/html/' + id + '.html');
     },
-
-
 });

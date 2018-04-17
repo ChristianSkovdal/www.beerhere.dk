@@ -1,8 +1,4 @@
-﻿.page-home {
-    height: 100%;
-}
-
-.frontpage-intro {
+﻿.frontpage-intro {
     margin-top: 40px;
     width: 50%;
 }
@@ -11,40 +7,34 @@
     text-align: center;
 }
 
-.header {
+/* .home-page-background {
     background-image: url(/img/densidstenadver.jpg);
-    background-size: cover;
-    background-position: top;
     background-repeat: no-repeat;
-    height: 300px;
-    
+    background-position: top;
+    background-size: contain;
+} */
+
+.homebanner {
+    width: 100%;
 }
 
 .contact-page-background {
     background-image: url(/img/beers/fat-cat.jpg);
     background-repeat: no-repeat;
-    background-size: 300px;
-    background-position-x: -50px;
-    background-position-y: -50px;
-    /* opacity: 0.2; 
-        filter: alpha(opacity=20); */
+    background-size: 40%;
+    background-position-x: -10%;
+    background-position-y: -10%;
 }
 
 .contact-page {
-    margin-left: 300px;
-    width: 360px;
+    width: 55%;
     background-color: pink;
+    margin-left: 40%;
 }
 
 
+
 @media only screen and (max-width: 376px) {
-    .header {
-        background-image: url(/img/densidstenadver.jpg);
-        background-size: cover;
-        background-position: top;
-        background-repeat: no-repeat;
-        height: 150px;
-        
-    }
+
         
 }

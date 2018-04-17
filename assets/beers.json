@@ -10,6 +10,10 @@
     "tapsign": "/img/beers/executioner.jpg",
     "label": "/downloads/labels/executioner.pdf",
     "available": false,
+    "ingredients": {
+      "malts": "Pilsnermalt and a touch of caramelmalt",
+      "hops": "Cenennial, Simcoe"
+    },
     "ibu": 70,
     "abv": 7.0,
     "og": 16,
@@ -34,7 +38,7 @@
     "style": "porter",
     "tagline": "Milkstout with Coffee",
     "tapsign": "/img/beers/ammestout.jpg",
-    "description": " Velvety stout brewed with lactose and coffee. Limited bitterness and chewy malts makes this a good beginners stout.",
+    "description": "Velvety stout brewed with lactose and coffee. Limited bitterness and chewy malts makes this a good beginners stout.",
     "img": "/img/beers/ammestout.jpg",
     "banner": "/img/banners/coffeebeans.jpg",   
     "available": true,
@@ -42,7 +46,11 @@
     "ibu": 80,
     "abv": 10.4,
     "og": 22.5,
-    
+    "ingredients": {
+      "malts": "Munich malt and Maris Otter, Chocolatemalt and roasted barley, caramelmalts are English Crystal and Special B",
+      "hops": "Polaris, Cascade",
+      "other": "Nescafe&copy;, espresso coffee and lactose"
+    },
     "ratings": {
       "rb": {
         "score": 98,
@@ -67,7 +75,10 @@
     "ibu": 60,
     "abv": 6.5,
     "og": 15.5,
-    
+    "ingredients": {
+      "malts": "Maris Otter, pilsnermalt, malted rye, crystal malt",
+      "hops": "Columbus and Simcoe"
+    },
     "ratings": {
       "rb": {
         "score": 98,
@@ -91,7 +102,10 @@
     "ibu": 60,
     "abv": 6.5,
     "og": 15.5,
-    
+    "ingredients": {
+      "malts": "Munich malt and Maris Otter, Chocolatemalt and the caramelmalts are English Crystal and Special B",
+      "hops": "Citra, Citra and Citra"
+    },
     "ratings": {
       "rb": {
         "score": 98,
@@ -109,14 +123,17 @@
     "style": "apa",
     "tagline": "Organic Pale Ale",
     "tapsign": "/img/beers/hippyjuice.jpg",
-    "description": " Juicy, light and slightly sweet pale ale with tangerine and grapefruit from lots of Mosaic hops.",
+    "description": "Juicy,light and slightly sweet pale ale with tangerine and grapefruit from lots of Mosaic hops.",
     "img": "/img/beers/hippyjuice.jpg",
     "banner": "/img/banners/glass.jpg",   
     "available": true,
     "ibu": 60,
     "abv": 6.5,
     "og": 15.5,
-    
+    "ingredients": {
+      "malts": "Pilsnermalt and flaked oats",
+      "hops": "Cascade and "
+    },
     "ratings": {
       "rb": {
         "score": 98,
@@ -131,6 +148,7 @@
   {
     "id": "alsatianblonde",
     "name": "Alsatian Blonde",
+    "style": "blonde",
     "tagline": "French Style Blonde Ale",
     "description": "An easy drinking simple blonde ale brewed with a herbal aroma and limited bitterness.",
     "img": "lighthouse.jpg",

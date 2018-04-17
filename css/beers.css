@@ -16,7 +16,7 @@ $color-green: #16b603; */
 @media (min-width: 1000px) {
     .big-50 {
         width: calc(50% - 20px);
-    } 
+    }
 }
 
 .bio-tile {
@@ -24,7 +24,7 @@ $color-green: #16b603; */
 }
 
 .bio-coverimage {
-    background-size: 100% auto !important;    
+    background-size: 100% auto !important;
 }
 
 .bio-banner, .bio-image {
@@ -40,7 +40,7 @@ $color-green: #16b603; */
     border-radius: 50%;
     margin-left: -35px;
     margin-top: -35px;
-} 
+}
 
 .bio-description {
     padding-top: 43px;
@@ -70,7 +70,7 @@ $color-green: #16b603; */
     background-size: contain;
     text-align: center;
     font-size: .6em !important;
-    color: whitesmoke !important;    
+    color: whitesmoke !important;
     font-weight: normal !important;
     background-size: contain;
     background-color: #607d8b !important;
@@ -86,7 +86,7 @@ $color-green: #16b603; */
 }
 .untappd {
     background-image: url('/img/ut.png') !important;
-    color: black !important;    
+    color: black !important;
     font-weight: bold !important;
 }
 
@@ -104,10 +104,10 @@ $color-green: #16b603; */
 
 
 .info {
-    background-color: #167abc !important;    
+    background-color: #167abc !important;
 }
 .label {
-    background-color: #ffc107 !important;    
+    background-color: #ffc107 !important;
 }
 
 .infotile {
@@ -196,17 +196,52 @@ $color-green: #16b603; */
     margin-left: 150px;
     margin-top: 25px;
     text-align: left;
-    
+
     width: calc(100% - 210px);
 }
 
-.info-text {
+.info-wrapper {
+    margin: 30px 20px 20px 20px;
 
-    margin: 20px;
-    line-height: 1.8em;
-    font-size: larger;
 }
 
+.info-heading {
+    font-size: 12px;
+
+    font-weight: bold;
+}
+
+.info-text {
+    font-size: 14px;
+    line-height: 18px;
+}
+
+.info-ingredients {
+    font-size: 12px;
+    line-height: 19px;
+    margin-top: 20px;
+}
+
+.info-ingr  {
+    background-repeat: no-repeat;
+    /* background-image: url('/img/Ingredients-Icons.png'); */
+ 
+}
+
+.ingrtext {
+}
+
+.info-malts {
+
+}
+
+.info-hops {
+
+}
+
+.info-other {
+
+}
 
 .info-image {
 
@@ -216,7 +251,7 @@ $color-green: #16b603; */
     border-radius: 50%;
     margin-left: -35px;
     margin-top: -40px;
-} 
+}
 
 /*==========================*/
 
@@ -227,7 +262,7 @@ $color-green: #16b603; */
 .social-status-category {
     font-size: .7em;
     font-weight: normal;
-    
+
 }
 
 .social-status-category:not(:last-child) {

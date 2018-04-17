@@ -13,7 +13,8 @@ Ext.define('Beer.PresentationTile', {
         banner: null,
         footer: null,
         image: null,
-        description: null
+        //description: null
+        info: null
     },
 
     referenceHolder: true,
@@ -45,6 +46,7 @@ Ext.define('Beer.PresentationTile', {
                             xtype: 'component',
                             userCls: 'bio-description',
                             flex: 1,
+                            tpl: `{name}<br>{tagline}`,
                             reference: 'description'
                         }
                     ]
@@ -68,10 +70,9 @@ Ext.define('Beer.PresentationTile', {
         this.configureImage('banner', value);
     },
 
-    updateDescription: function (value) {
+    updateInfo: function (value) {
         var description = this.lookup('description');
-
-        description.setHtml(value);
+        description.setData(value);
     },
 
     updateImage: function (value) {
